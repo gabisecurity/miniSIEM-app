@@ -1,16 +1,41 @@
+
 @echo off
-echo Iniciando instalação do MiniSIEM no Windows...
+SETLOCAL ENABLEDELAYEDEXPANSION
 
-REM Verificações manuais
-echo Certifique-se de que o Docker Desktop e o Node.js estão instalados.
-pause
+echo === Checking for Node.js and NPM ===
+where node >nul 2>nul
+IF %ERRORLEVEL% NEQ 0 (
+    echo Node.js is not installed. Please install it from https://nodejs.org/
+    pause
+    exit /b
+)
+where npm >nul 2>nul
+IF %ERRORLEVEL% NEQ 0 (
+    echo NPM is not installed. Please install it with Node.js from https://nodejs.org/
+    pause
+    exit /b
+)
 
-REM Subir backend com Docker Compose
+echo === Checking for Docker ===
+where docker >nul 2>nul
+IF %ERRORLEVEL% NEQ 0 (
+    echo Docker is not installed. Please install Docker Desktop from https://www.docker.com/products/docker-desktop
+    pause
+    exit /b
+)
+
+echo === Starting Docker Backend ===
 cd backend
-docker compose up -d --build
+docker compose up --build -d
 cd ..
 
-REM Instalar dependências do frontend
+echo === Installing Frontend Dependencies ===
 cd frontend
-call npm install
-call npm run dev
+npm install
+
+echo === Starting Frontend ===
+start cmd /k "npm run dev"
+cd ..
+
+echo === MiniSIEM Dashboard started successfully ===
+pause
