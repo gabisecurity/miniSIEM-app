@@ -1,7 +1,7 @@
 # 🛡️ MiniSIEM Dashboard
 
 <p align="center">
-  <img src="assets/capa.png" alt="MiniSIEM Dashboard" width="600"/>
+  <img src="assets/capa.jpg" alt="MiniSIEM Dashboard" width="600"/>
 </p>
 
 MiniSIEM is a lightweight and modular Security Information and Event Management (SIEM) simulator.  
