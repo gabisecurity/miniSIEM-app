@@ -1,57 +1,37 @@
 
 # 🛡️ MiniSIEM Dashboard
 
-![MiniSIEM Dashboard Preview](./dd6c6444-6f26-47ed-b489-864ff3aa20c9.png)
+![MiniSIEM Dashboard Preview](./app.png)
 
-Um projeto visualmente impressionante para simular um ambiente de monitoramento de eventos de segurança. Ideal para portfólios de profissionais da área de **Cybersecurity**, **DevSecOps**, **SOC Analysts** e **Pentesters** que desejam mostrar domínio técnico com visual profissional.
-
----
-
-## 🚀 Recursos
-
-- 📊 Dashboard com dados em tempo real
-- ⚠️ Logs categorizados por severidade: LOW, MEDIUM, HIGH, CRITICAL
-- 🌒 Modo escuro com alto contraste
-- 🧠 Filtro por IP, mensagem, host e severidade
-- 📦 Exportação dos logs em JSON
-- 📈 Gráfico dinâmico por severidade com animação
-- ✅ Rodando em `React`, `FastAPI`, `Docker` e `SQLite`
+MiniSIEM is a lightweight and modular Security Information and Event Management (SIEM) simulator.  
+It was designed to showcase my ability to deliver a full-stack cybersecurity dashboard that ingests, stores, visualizes and interacts with real-time log data.
 
 ---
 
-## 📦 Instalação rápida (Linux)
+## 🚀 Highlights
 
-```bash
-git clone https://github.com/seuusuario/minisiem-dashboard.git
-cd minisiem-dashboard
-chmod +x setup_minisiem_linux.sh
-./setup_minisiem_linux.sh
-```
-
----
-
-## 🪟 Instalação rápida (Windows)
-
-1. Instale o [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-2. Instale o [Node.js](https://nodejs.org/)
-3. Dê dois cliques no arquivo:
-
-```
-setup_minisiem_windows.bat
-```
-
-> Ele irá instalar tudo e iniciar automaticamente o sistema.
+- 🧠 Built with **FastAPI**, **React**, **Tailwind CSS**, **SQLite**, and **Docker**
+- 📊 Real-time log ingestion and visualization (auto-refreshing every 5 seconds)
+- 🔍 Filters by **severity**, **IP address**, **hostname**, and **event content**
+- ⚠️ Event severity indicator with pulsing animation for `CRITICAL` logs
+- 📈 Live bar chart with severity breakdown over time (LOW, MEDIUM, HIGH, CRITICAL)
+- 🌘 Responsive dark mode with professional UI design
+- 📥 One-click **JSON export** of filtered logs
+- 💡 Built to mimic the behavior of a real-world SOC or SIEM environment
 
 ---
 
-## 🔗 Acesso
+## 🧱 Architecture
 
-- **Frontend (React):** http://localhost:5173  
-- **Backend (FastAPI):** http://localhost:8000/docs
+- **Backend:** FastAPI REST API that receives and stores logs in SQLite
+- **Frontend:** React dashboard with live updates using Axios
+- **Log Generator:** Python script that simulates log entries for various security scenarios
+- **Docker:** Multi-container environment using Docker Compose
+- **Database:** Lightweight and persistent via SQLite (no external DB required)
 
 ---
 
-## 🧪 Exemplo de eventos capturados
+## 🧪 Sample Log Entry
 
 ```json
 {
@@ -67,9 +47,55 @@ setup_minisiem_windows.bat
 
 ---
 
-## 👨‍💻 Feito por Gabriel Pereira
+## 🔧 How to Run
 
-Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/gabisecurity/)  
-Veja mais projetos em [gabisecurity.com](https://gabisecurity.com)
+### 🐧 Linux
+
+```bash
+git clone https://github.com/your-username/minisiem-dashboard.git
+cd minisiem-dashboard
+chmod +x setup_minisiem_linux.sh
+./setup_minisiem_linux.sh
+```
+
+### 🪟 Windows
+
+> Requirements: [Docker Desktop](https://www.docker.com/products/docker-desktop) and [Node.js](https://nodejs.org/)
+
+```cmd
+Double-click setup_minisiem_windows.bat
+```
 
 ---
+
+## 🌐 Access
+
+- **Frontend UI:** http://localhost:5173
+- **API Docs (Swagger):** http://localhost:8000/docs
+
+---
+
+## 📌 Why This Project Matters
+
+This project was developed to **demonstrate my technical versatility** in the cybersecurity domain:
+- ✔️ Real-time event handling & frontend visualization
+- ✔️ Full-stack containerized deployment
+- ✔️ Clean, readable code with modular components
+- ✔️ Effective use of modern frameworks in both frontend and backend
+- ✔️ Ability to simulate SOC behavior and event flow
+
+---
+
+## 👨‍💻 About the Author
+
+**Gabriel Pereira**  
+Security Operations Manager | SIEM Engineer | DevSecOps Enthusiast  
+🔗 [LinkedIn](https://www.linkedin.com/in/gabisecurity) | 🌐 [Portfolio](https://gabisecurity.com)
+
+---
+
+## 💬 Feedback & Collaboration
+
+I am actively looking for international opportunities in cybersecurity and software security engineering.  
+If you're hiring or have feedback, I'd love to hear from you.
+
