@@ -1,0 +1,5 @@
+FROM python:3.11-slim
+WORKDIR /simulator
+COPY log_simulator.py /simulator
+RUN pip install requests
+CMD ["python", "log_simulator.py"]

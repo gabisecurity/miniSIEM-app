@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+  simulator:
+    build:
+      context: .
+      dockerfile: Dockerfile.simulator
+    depends_on:
+      - api
