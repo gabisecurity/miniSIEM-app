@@ -1,4 +1,4 @@
-# 🛡️ MiniSIEM Dashboard
+# 🛡️ MiniSIEM App
 
 <p align="center">
   <img src="assets/capa.jpg" alt="MiniSIEM Dashboard" width="600"/>
