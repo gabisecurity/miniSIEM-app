@@ -1,7 +1,8 @@
-
 # 🛡️ MiniSIEM Dashboard
 
-![MiniSIEM Dashboard Preview](./app.png)
+<p align="center">
+  <img src="assets/capa.png" alt="MiniSIEM Dashboard" width="600"/>
+</p>
 
 MiniSIEM is a lightweight and modular Security Information and Event Management (SIEM) simulator.  
 It was designed to showcase my ability to deliver a full-stack cybersecurity dashboard that ingests, stores, visualizes and interacts with real-time log data.
@@ -78,6 +79,7 @@ Double-click setup_minisiem_windows.bat
 ## 📌 Why This Project Matters
 
 This project was developed to **demonstrate my technical versatility** in the cybersecurity domain:
+
 - ✔️ Real-time event handling & frontend visualization
 - ✔️ Full-stack containerized deployment
 - ✔️ Clean, readable code with modular components
@@ -98,4 +100,3 @@ Security Operations Manager | SIEM Engineer | DevSecOps Enthusiast
 
 I am actively looking for international opportunities in cybersecurity and software security engineering.  
 If you're hiring or have feedback, I'd love to hear from you.
-
